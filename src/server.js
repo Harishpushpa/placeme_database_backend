@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors()); // Allow frontend requests
 
-mongoose.connect('mongodb://localhost:27017/studentdata')
+mongoose.connect('mongodb+srv://winharishbalu:Harish1$@placementdata.naiiepb.mongodb.net/')
     .then(() => console.log('DB Connected'))
     .catch(err => console.log(`DB Error: ${err}`));
 
