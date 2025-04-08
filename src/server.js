@@ -6,7 +6,7 @@ const port = 5000;
 const app = express();
 app.use(express.json());
 app.use(cors()); // Allow frontend requests
-mongoose.connect('mongodb+srv://sjit_placemet_data:Harish123@placementdata.naiiepb.mongodb.net/')
+mongoose.connect('mongodb+srv://sjit_placemet_data:Harish123@placementdata.naiiepb.mongodb.net/?retryWrites=true&w=majority&appName=placementdata')
 .then(() => console.log('✅ MongoDB Connected'))
 .catch(err => console.error(`❌ DB Error: ${err}`));
 
