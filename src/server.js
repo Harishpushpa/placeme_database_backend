@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors()); // Allow frontend requests
 
-mongoose.connect('mongodb+srv://winharishbalu:Harish1%24@placementdata.naiiepb.mongodb.net/')
+mongoose.connect('mongodb+srv://winharishbalu:Harish1%24@placementdata.naiiepb.mongodb.net/placeme_db?retryWrites=true&w=majority')
     .then(() => console.log('DB Connected'))
     .catch(err => console.log(`DB Error: ${err}`));
 
